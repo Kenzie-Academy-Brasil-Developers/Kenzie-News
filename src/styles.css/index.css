@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
+
+figure {
+    background: #5163D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 1rem;
+}
+
+figure>img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.cardDivs {
+    display: flex;
+    max-width: 90%;
+    box-shadow: 2px 1px 17px 4px #ccc;
+    padding: 0.2rem;
+    border-radius: .2rem;
+}
+
+.divImg img {
+    width: 0;
+    height: 0;
+}
+
+.divTextos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.divTextos>span {
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+    border-radius: 4px;
+    padding: 2px, 8px, 2px, 8px;
+    background: #D7E4FB;
+    font-size: 0.8rem;
+    color: #5163D3;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+.divTextos>h1 {
+    color: #5163D3;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+.divTextos>h2 {
+    color: #1B1C1E;
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+.divTextos>p {
+    color: #1B1C1E;
+    font-size: 0.7rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+
+footer {
+    margin-top: 20px;
+    background: #EEEEEE;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .cardDivs {
+        padding: 1.5rem;
+        width: 80%;
+    }
+
+    .cardDivs>h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .cardDivs {
+        padding: 1.5rem;
+        width: 80%;
+        height: 20vh;
+        flex-direction: row;
+    }
+
+    .divTextos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 100%;
+        align-items: flex-start;
+    }
+
+    .divImg {
+        max-width: 270px;
+        max-height: 100%;
+    }
+
+    .divImg img {
+        width: 270px;
+        min-height: 100%;
+    }
+
+    .divTextos>h1 {
+        font-size: 1.2rem;
+    }
+
+    .divTextos>h2 {
+        font-size: 1rem;
+    }
+
+    .divTextos>span {
+        font-size: .8rem;
+    }
+
+}
+
+
+@media (min-width: 1440px) {
+    .cardDivs {
+        padding: 1.5rem;
+        width: 80%;
+        height: 20vh;
+        flex-direction: row;
+    }
+
+    .divTextos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .divImg {
+        max-width: 270px;
+        height: 100%;
+    }
+
+    .divImg img {
+        width: 270px;
+        min-height: 100%;
+    }
+
+    .divTextos>h1 {
+        font-size: 2rem;
+    }
+
+    .divTextos>h2 {
+        font-size: 1.3rem;
+    }
+
+    .divTextos>span {
+        font-size: 1rem;
+    }
+
+}
